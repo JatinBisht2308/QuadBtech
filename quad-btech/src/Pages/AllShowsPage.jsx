@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ShowCard from "../Components/ShowCard";
+import '../Styles/allShowsPages.css';
+
 const AllShowsPage = () => {
   const [shows, setShows] = useState([]);
   const getData = async () => {

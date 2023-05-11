@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
 import './App.css';
-import axios from 'axios';
 import AllShows from './Pages/AllShowsPage';
+import Navbar from "./Components/Navbar";
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <AllShows  />
     </div>
   );
