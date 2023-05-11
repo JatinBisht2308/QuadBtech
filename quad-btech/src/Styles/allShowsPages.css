@@ -1,4 +1,7 @@
 .AllShows{
-    margin: 0;
-    padding: 0;
+    display: grid;
+    margin-top: 1rem;
+    padding: 2rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
 }

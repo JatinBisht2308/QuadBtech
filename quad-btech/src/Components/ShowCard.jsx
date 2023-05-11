@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../Styles/showcard.css";
 const ShowCard = (props) => {
   return (
     <div className="ShowCard">
