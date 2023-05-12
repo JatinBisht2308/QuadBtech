@@ -1,7 +1,9 @@
 .AllShows{
     display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
+    grid-gap: 5vw;
+    grid-template-rows: auto;
     margin-top: 1rem;
     padding: 2rem;
-    row-gap: 1rem;
-    column-gap: 1rem;
+  
 }
