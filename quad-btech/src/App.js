@@ -1,12 +1,14 @@
 import './App.css';
+import {Routes,Route} from 'react-router-dom';
 import AllShows from './Pages/AllShowsPage';
-import Navbar from "./Components/Navbar";
+import ShowBookingPage from './Pages/ShowBookingPage';
+
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <AllShows  />
-    </div>
+    <Routes>
+      <Route path="/" element={<AllShows />} />
+      <Route path="/show/:showId" element={<ShowBookingPage />} />
+    </Routes>
   );
 }
 

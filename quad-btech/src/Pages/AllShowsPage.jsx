@@ -18,6 +18,7 @@ const AllShowsPage = () => {
   }, []);
   return (
     <div className="AllShows">
+      
       {shows.map((show) => {
         return <ShowCard showInfo={show} />;
       })}

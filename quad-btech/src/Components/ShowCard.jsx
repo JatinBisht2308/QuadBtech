@@ -1,6 +1,11 @@
 import React from "react";
+import {Link,useNavigate } from "react-router-dom";
 import "../Styles/showcard.css";
 const ShowCard = (props) => {
+  const navigate = useNavigate();
+  const goToBookingPage = () =>{
+    navigate("/show/:showId");
+  }
   return (
     <div className="ShowCard">
       <div className="card-top">
@@ -23,7 +28,7 @@ const ShowCard = (props) => {
             ? "0"
             : props.showInfo.show.rating.average}
         </p>
-        <button className="card-btn">more</button>
+        <button className="card-btn" onClick={goToBookingPage} >more</button>
       </div>
     </div>
   );
