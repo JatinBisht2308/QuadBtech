@@ -4,7 +4,7 @@ import "../Styles/showcard.css";
 const ShowCard = (props) => {
   const navigate = useNavigate();
   const goToBookingPage = () =>{
-    navigate("/show/:showId",{state:props.showInfo.show});
+    navigate(`show/${props.showInfo.show.id}`,{state:props.showInfo.show});
   }
   return (
     <div className="ShowCard">
